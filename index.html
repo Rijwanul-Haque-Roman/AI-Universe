@@ -16,6 +16,8 @@
             font-family: "Work Sans", sans-serif;
         }
     </style>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/e70ffbd9f5.js" crossorigin="anonymous"></script>
     <!-- Tailwind & DaisyUI CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -33,24 +35,13 @@
     <!-- main section -->
     <main class="container mx-auto">
         <section>
-            <div class="card w-96 bg-slate-400 shadow-xl">
-                <figure class="px-10 pt-10">
-                    <img src="assets/gpt.png" alt="" class="rounded-xl" />
-                </figure>
-                <div class="card-body items-start">
-                    <h2 class="text-black text-[25px] font-semibold">Features</h2>
-                    <ol class="list-decimal pl-4 text-[#585858]">
-                        <li>Natural language processing</li>
-                        <li>Contextual understanding</li>
-                        <li>Text generation</li>
-                    </ol>
-                    <hr class="mt-3 border border-[#585858] w-full mx-auto">
-                    <h2 class="text-black text-[25px] font-semibold">ChatGPT</h2>
-                    <div class="flex gap-2 justify-center items-center">
-                        <img src="assets/calender.svg" alt="">
-                        <p>11/01/2022</p>
-                    </div>
-                </div>
+            <div id="ai-container" class="grid grid-cols-1 lg:grid-cols-3 gap-8 justify-center">
+                <!-- <img src="assets/ai.jpg" alt=""> -->
+            </div>
+            <div class="text-center my-10">
+                <button onclick="showMore()"
+                    class="btn bg-[#EB5757] hover:bg-[#d13838] text-white text-[20px] font-semibold">Sort By
+                    Date</button>
             </div>
         </section>
     </main>
